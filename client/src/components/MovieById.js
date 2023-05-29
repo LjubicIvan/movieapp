@@ -29,17 +29,7 @@ function MovieById() {
     });
   }
 
-  const handleDelete = () => {
-    fetch(`/movie/${movieID*1}`, {
-      method: 'DELETE'
-    })
-      .then(response => {
-        console.log(response)
-      })
-      .catch(error => {
-        console.log(error);
-      });
-  };
+  
 
   return (
     <div>
@@ -73,7 +63,7 @@ function MovieById() {
                 <a href={movie.imdb_url}>ImDB</a>
               </button>
 
-              <button onClick={handleDelete} className="movie_id_delete">
+              <button className="movie_id_delete">
                 Delete Movie
               </button>
             </div>

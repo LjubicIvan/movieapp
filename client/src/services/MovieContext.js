@@ -56,6 +56,9 @@ export function MovieProvider({ children }) {
 
   
 
+
+  
+
   const handleSearch = (e) => {
     if (!e) return;
     e.preventDefault();
@@ -80,6 +83,7 @@ console.log(movies)
         setMovies,
         favorites,
         setFavorites,
+        
         
         
         handleSearch,
