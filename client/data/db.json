@@ -1,0 +1,351 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "movie": "The Shawshank Redemption",
+      "rating": 9.2,
+      "image": "./images/movie.jpg",
+      "imdb_url": "https://www.imdb.com/title/tt0111161/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis obcaecati numquam sed sapiente aperiam nesciunt reprehenderit, accusamus sit quam cum. Facere consequatur mollitia odit vel neque ipsum nihil architecto exercitationem totam. Molestiae deleniti perspiciatis quisquam magnam itaque ex nobis minus dolorem, aut mollitia reprehenderit molestias omnis sed ipsum sit!",
+      "tag": [
+        "comedy",
+        "action",
+        "thriller"
+      ],
+      "stars": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ]
+    },
+    {
+      "id": 2,
+      "movie": "The Godfather",
+      "rating": 9.2,
+      "image": "images/godfather.jpg",
+      "imdb_url": "https://www.imdb.com/title/tt0068646/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis obcaecati numquam sed sapiente aperiam nesciunt reprehenderit, accusamus sit quam cum. Facere consequatur mollitia odit vel neque ipsum nihil architecto exercitationem totam. Molestiae deleniti perspiciatis quisquam magnam itaque ex nobis minus dolorem, aut mollitia reprehenderit molestias omnis sed ipsum sit!",
+      "tag": [
+        "comedy",
+        "action"
+      ],
+      "stars": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ]
+    },
+    {
+      "id": 3,
+      "movie": "The Dark Knight",
+      "rating": 9,
+      "image": "images/dark_knight.jpg",
+      "imdb_url": "https://www.imdb.com/title/tt0468569/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis obcaecati numquam sed sapiente aperiam nesciunt reprehenderit, accusamus sit quam cum. Facere consequatur mollitia odit vel neque ipsum nihil architecto exercitationem totam. Molestiae deleniti perspiciatis quisquam magnam itaque ex nobis minus dolorem, aut mollitia reprehenderit molestias omnis sed ipsum sit!",
+      "tag": [
+        "comedy",
+        "action",
+        "thriller",
+        "adventure"
+      ],
+      "stars": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ]
+    },
+    {
+      "id": 4,
+      "movie": "Pulp Fiction",
+      "rating": 8.9,
+      "image": "images/pulp_fiction.jpg",
+      "imdb_url": "https://www.imdb.com/title/tt0110912/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis obcaecati numquam sed sapiente aperiam nesciunt reprehenderit, accusamus sit quam cum. Facere consequatur mollitia odit vel neque ipsum nihil architecto exercitationem totam. Molestiae deleniti perspiciatis quisquam magnam itaque ex nobis minus dolorem, aut mollitia reprehenderit molestias omnis sed ipsum sit!",
+      "tag": [
+        "comedy",
+        "action",
+        "thriller"
+      ],
+      "stars": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ]
+    },
+    {
+      "id": 5,
+      "movie": "The Lord of the Rings: The Return of the King",
+      "rating": 9,
+      "image": "images/lotr_return_king.jpg",
+      "imdb_url": "https://www.imdb.com/title/tt0167260/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis obcaecati numquam sed sapiente aperiam nesciunt reprehenderit, accusamus sit quam cum. Facere consequatur mollitia odit vel neque ipsum nihil architecto exercitationem totam. Molestiae deleniti perspiciatis quisquam magnam itaque ex nobis minus dolorem, aut mollitia reprehenderit molestias omnis sed ipsum sit!",
+      "tag": [
+        "comedy",
+        "action",
+        "thriller"
+      ],
+      "stars": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ]
+    },
+    {
+      "id": 6,
+      "movie": "The Good, the Bad and the Ugly",
+      "rating": 8.8,
+      "image": "images/good_bad_ugly.jpg",
+      "imdb_url": "https://www.imdb.com/title/tt0060196/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis obcaecati numquam sed sapiente aperiam nesciunt reprehenderit, accusamus sit quam cum. Facere consequatur mollitia odit vel neque ipsum nihil architecto exercitationem totam. Molestiae deleniti perspiciatis quisquam magnam itaque ex nobis minus dolorem, aut mollitia reprehenderit molestias omnis sed ipsum sit!",
+      "tag": [
+        "comedy",
+        "action",
+        "thriller"
+      ],
+      "stars": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ]
+    },
+    {
+      "id": 7,
+      "movie": "Fight Club",
+      "rating": 8.8,
+      "image": "images/fight_club.jpg",
+      "imdb_url": "https://www.imdb.com/title/tt0137523/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis obcaecati numquam sed sapiente aperiam nesciunt reprehenderit, accusamus sit quam cum. Facere consequatur mollitia odit vel neque ipsum nihil architecto exercitationem totam. Molestiae deleniti perspiciatis quisquam magnam itaque ex nobis minus dolorem, aut mollitia reprehenderit molestias omnis sed ipsum sit!",
+      "tag": [
+        "comedy",
+        "action",
+        "thriller"
+      ],
+      "stars": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ]
+    },
+    {
+      "id": 8,
+      "movie": "The Lord of the Rings: The Fellowship of the Ring",
+      "rating": 8.8,
+      "image": "images/lotr_fellowship.jpg",
+      "imdb_url": "https://www.imdb.com/title/tt0120737/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis obcaecati numquam sed sapiente aperiam nesciunt reprehenderit, accusamus sit quam cum. Facere consequatur mollitia odit vel neque ipsum nihil architecto exercitationem totam. Molestiae deleniti perspiciatis quisquam magnam itaque ex nobis minus dolorem, aut mollitia reprehenderit molestias omnis sed ipsum sit!",
+      "tag": [
+        "comedy",
+        "action",
+        "thriller"
+      ],
+      "stars": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ]
+    },
+    {
+      "id": 9,
+      "movie": "Forrest Gump",
+      "rating": 8.8,
+      "image": "images/forrest_gump.jpg",
+      "imdb_url": "https://www.imdb.com/title/tt0109830/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis obcaecati numquam sed sapiente aperiam nesciunt reprehenderit, accusamus sit quam cum. Facere consequatur mollitia odit vel neque ipsum nihil architecto exercitationem totam. Molestiae deleniti perspiciatis quisquam magnam itaque ex nobis minus dolorem, aut mollitia reprehenderit molestias omnis sed ipsum sit!",
+      "tag": [
+        "comedy",
+        "action",
+        "thriller"
+      ],
+      "stars": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ]
+    },
+    {
+      "id": 10,
+      "movie": "Inception",
+      "rating": 8.8,
+      "image": "images/inception.jpg",
+      "imdb_url": "https://www.imdb.com/title/tt1375666/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis obcaecati numquam sed sapiente aperiam nesciunt reprehenderit, accusamus sit quam cum. Facere consequatur mollitia odit vel neque ipsum nihil architecto exercitationem totam. Molestiae deleniti perspiciatis quisquam magnam itaque ex nobis minus dolorem, aut mollitia reprehenderit molestias omnis sed ipsum sit!",
+      "tag": [
+        "comedy",
+        "action",
+        "thriller"
+      ],
+      "stars": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ]
+    },
+    {
+      "id": 11,
+      "movie": "Movie Test",
+      "rating": 8.8,
+      "image": "images/inception.jpg",
+      "imdb_url": "https://www.imdb.com/title/tt1375666/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis obcaecati numquam sed sapiente aperiam nesciunt reprehenderit, accusamus sit quam cum. Facere consequatur mollitia odit vel neque ipsum nihil architecto exercitationem totam. Molestiae deleniti perspiciatis quisquam magnam itaque ex nobis minus dolorem, aut mollitia reprehenderit molestias omnis sed ipsum sit!",
+      "tag": [
+        "comedy",
+        "action",
+        "thriller"
+      ],
+      "stars": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ]
+    },
+    {
+      "id": 12,
+      "movie": "Movie Test2",
+      "rating": 8.8,
+      "image": "images/inception.jpg",
+      "imdb_url": "https://www.imdb.com/title/tt1375666/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis obcaecati numquam sed sapiente aperiam nesciunt reprehenderit, accusamus sit quam cum. Facere consequatur mollitia odit vel neque ipsum nihil architecto exercitationem totam. Molestiae deleniti perspiciatis quisquam magnam itaque ex nobis minus dolorem, aut mollitia reprehenderit molestias omnis sed ipsum sit!",
+      "tag": [
+        "comedy",
+        "action",
+        "thriller"
+      ],
+      "stars": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ]
+    },
+    {
+      "id": 13,
+      "movie": "Movie Test3",
+      "rating": 8.8,
+      "image": "images/inception.jpg",
+      "imdb_url": "https://www.imdb.com/title/tt1375666/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis obcaecati numquam sed sapiente aperiam nesciunt reprehenderit, accusamus sit quam cum. Facere consequatur mollitia odit vel neque ipsum nihil architecto exercitationem totam. Molestiae deleniti perspiciatis quisquam magnam itaque ex nobis minus dolorem, aut mollitia reprehenderit molestias omnis sed ipsum sit!",
+      "tag": [
+        "comedy",
+        "action",
+        "thriller"
+      ],
+      "stars": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ]
+    },
+    {
+      "id": 14,
+      "movie": "Movie Test4",
+      "rating": 8.8,
+      "image": "images/inception.jpg",
+      "imdb_url": "https://www.imdb.com/title/tt1375666/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis obcaecati numquam sed sapiente aperiam nesciunt reprehenderit, accusamus sit quam cum. Facere consequatur mollitia odit vel neque ipsum nihil architecto exercitationem totam. Molestiae deleniti perspiciatis quisquam magnam itaque ex nobis minus dolorem, aut mollitia reprehenderit molestias omnis sed ipsum sit!",
+      "tag": [
+        "comedy",
+        "action",
+        "thriller"
+      ],
+      "stars": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ]
+    },
+    {
+      "id": 15,
+      "movie": "Movie Test 15",
+      "rating": 8.8,
+      "image": "images/inception.jpg",
+      "imdb_url": "https://www.imdb.com/title/tt1375666/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis obcaecati numquam sed sapiente aperiam nesciunt reprehenderit, accusamus sit quam cum. Facere consequatur mollitia odit vel neque ipsum nihil architecto exercitationem totam. Molestiae deleniti perspiciatis quisquam magnam itaque ex nobis minus dolorem, aut mollitia reprehenderit molestias omnis sed ipsum sit!",
+      "tag": [
+        "comedy",
+        "action",
+        "thriller",
+        "horror"
+      ],
+      "stars": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ]
+    },
+    {
+      "id": 16,
+      "movie": "Movie Test4",
+      "rating": 8.8,
+      "image": "images/inception.jpg",
+      "imdb_url": "https://www.imdb.com/title/tt1375666/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis obcaecati numquam sed sapiente aperiam nesciunt reprehenderit, accusamus sit quam cum. Facere consequatur mollitia odit vel neque ipsum nihil architecto exercitationem totam. Molestiae deleniti perspiciatis quisquam magnam itaque ex nobis minus dolorem, aut mollitia reprehenderit molestias omnis sed ipsum sit!",
+      "tag": [
+        "comedy",
+        "action",
+        "thriller"
+      ],
+      "stars": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ]
+    },
+    {
+      "id": 17,
+      "movie": "Movie Test4",
+      "rating": 8.8,
+      "image": "images/inception.jpg",
+      "imdb_url": "https://www.imdb.com/title/tt1375666/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis obcaecati numquam sed sapiente aperiam nesciunt reprehenderit, accusamus sit quam cum. Facere consequatur mollitia odit vel neque ipsum nihil architecto exercitationem totam. Molestiae deleniti perspiciatis quisquam magnam itaque ex nobis minus dolorem, aut mollitia reprehenderit molestias omnis sed ipsum sit!",
+      "tag": [
+        "comedy",
+        "action",
+        "thriller"
+      ],
+      "stars": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ]
+    },
+    {
+      "movie": "ads",
+      "rating": "1",
+      "description": "ad",
+      "url": "da",
+      "tag": [
+        "da"
+      ],
+      "stars": [
+        "tim rob",
+        " morg fre"
+      ],
+      "id": 18
+    },
+    {
+      "movie": "asda",
+      "rating": "1",
+      "description": "sdasd1",
+      "url": "dasq",
+      "tag": [
+        "asd"
+      ],
+      "stars": [
+        "asd"
+      ],
+      "id": 19
+    },
+    {
+      "movie": "test1111",
+      "rating": "12",
+      "description": "asda",
+      "url": "12",
+      "tag": [
+        "asd"
+      ],
+      "stars": [
+        "dfs"
+      ],
+      "id": 20
+    }
+  ]
+}

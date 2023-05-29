@@ -1,0 +1,37 @@
+
+  const getRandomNumbers = () => {
+    const randomNumbers = [];
+    while (randomNumbers.length < 4) {
+      const randomNumber = Math.floor(Math.random() * movies.length) + 1;
+      if (!randomNumbers.includes(randomNumber)) {
+        randomNumbers.push(randomNumber);
+      }
+    }
+    return randomNumbers;
+  };
+
+  const randomNumbers = getRandomNumbers();
+
+  const filteredData = movies.filter((item) => randomNumbers.includes(item.id));
+
+
+   const listOfRandomPicks=filteredData.map((item)=>(
+    <div className="movie_news_card" key={item.id}>
+            <img
+              src={require("../images/movie1.jpg")}
+              className="movie_news_card_image"
+              alt="movie_card"
+            />
+            <div className="movie_news_card_tags">
+              <h2 className="movie_news_card_tag">{item.rating}</h2>
+              <h2 className="movie_news_card_year">{item.rating}</h2>
+            </div>
+            <h2 className="movie_news_card_title">
+              {item.title}
+            </h2>
+          </div>
+  ))
+  
+
+
+  {listOfRandomPicks}
