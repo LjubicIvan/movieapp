@@ -7,7 +7,8 @@ function MovieForm() {
   const [movie, setMovie] = useState("");
   const [rating, setRating] = useState("");
   const [description, setDescription] = useState("");
-  const [url, setUrl] = useState("");
+  const [imdb_url, setImdb_Url] = useState("");
+  const [year, setYear] = useState("");
   const [tags, setTags] = useState("");
   const [star, setStar] = useState("");
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ function MovieForm() {
     e.preventDefault();
     const tag=tags.split(" ");
     const stars=star.split(",");
-    const movieData = { movie, rating, description, url, tag, stars };
+    const movieData = { movie, rating, description, imdb_url, tag,year, stars };
 
     axios
       .post("http://localhost:8000/movies", movieData)
@@ -58,6 +59,17 @@ function MovieForm() {
             }}
             value={rating}
           />
+          <input
+            type="number"
+            required
+            name="movie"
+            id=""
+            placeholder="Year of Movie..."
+            onChange={(e) => {
+              setYear(e.target.value);
+            }}
+            value={year}
+          />
           <textarea
             type="text"
             required
@@ -77,9 +89,9 @@ function MovieForm() {
             name="movie"
             id=""
             placeholder="ImDB URL..."
-            value={url}
+            value={imdb_url}
             onChange={(e) => {
-              setUrl(e.target.value);
+              setImdb_Url(e.target.value);
             }}
           />
           <input

@@ -1,25 +1,18 @@
 import React from "react";
 import MovieContext from "../services/MovieContext";
-import { useContext } from "react";
+import { useContext,useState } from "react";
+import {
+  BiChevronLeft,
+  BiChevronRight,
+
+} from "react-icons/bi";
+
 
 export default function MovieNews() {
   const { movies } = useContext(MovieContext);
 
-
-  // function generateRandomNumbers() {
-  //   var numbers = [];
-  //   for (var i = 0; i < 4; i++) {
-  //     var randomNumber = Math.floor((Math.random() * movies.length) +1); 
-  //     numbers.push(randomNumber);
-  //   }
-  //   return numbers;
-  // }
-  // var randomNumbers = generateRandomNumbers();
-  // console.log(randomNumbers);
-
-
-
-
+ 
+ 
   const data = [
     {
       id: 1,
@@ -43,11 +36,51 @@ export default function MovieNews() {
       id: 4,
       tag: "Action",
       year: 2023,
+      title: "The Gentlemans",
+    },
+    {
+      id: 5,
+      tag: "Action",
+      year: 2023,
+      title: "The Marvelous Mrs. Maisel"
+    },
+    {
+      id: 6,
+      tag: "Action",
+      year: 2023,
+      title: "The Gentlemans",
+    },
+    {
+      id: 7,
+      tag: "Action",
+      year: 2023,
+      title: "The Marvelous Mrs. Maisel"
+    },
+    {
+      id: 8,
+      tag: "Action",
+      year: 2023,
       title: "Fast X",
     },
   ];
 
-  
+  const [pageNumber, setPageNumber] = useState(1);
+  const postLimit = 4;
+  const lastIndex = pageNumber * postLimit;
+  const firstIndex = lastIndex - postLimit;
+
+  const numberOfPages = Math.ceil(data.length / postLimit);
+
+  const nextPage = () => {
+    if (pageNumber < numberOfPages) {
+      setPageNumber(pageNumber + 1);
+    }
+  };
+  const prevPage = () => {
+    if (pageNumber > 1) {
+      setPageNumber(pageNumber - 1);
+    }
+  };
   
 
   
@@ -72,8 +105,11 @@ export default function MovieNews() {
     )
   })
 
-  const listOfNewMovies = data.map((item) => {
-    return (
+
+
+
+  const carousel=data.slice(firstIndex,lastIndex).map((item)=>{
+    return(
       <div className="movie_news_card" key={item.id}>
         <img
           src={require("../images/movie1.jpg")}
@@ -89,8 +125,8 @@ export default function MovieNews() {
           {item.title}
         </h2>
       </div>
-    );
-  });
+    )
+  })
 
 
     
@@ -102,10 +138,24 @@ export default function MovieNews() {
       <div className="movie_news">
         <h1 className="movie_news_title">Upcoming Movies</h1>
         <div className="movie_news_cards">
-          {listOfNewMovies}
+        
+        
+        {carousel}
+        
+         
         </div>
+
+        <button onClick={prevPage} className="pagination_news">
+        <BiChevronLeft />
+      </button>
+      <button onClick={nextPage} className="pagination_news">
+      <BiChevronRight />
+    </button>
+
         <hr></hr>
       </div>
+
+      
 
 
 
@@ -121,6 +171,8 @@ export default function MovieNews() {
         </div>
         <hr></hr>
       </div>
+
+
     </div>
   );
 }
