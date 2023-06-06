@@ -14,6 +14,7 @@ import Register from "./components/Register";
 
 import AdminRoute from "./services/AdminRoute";
 import NotAuth from "./components/NotAuth";
+import EditMovie from "./components/EditMovie";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
 
             <Route element={<AdminRoute />}>
               <Route path="/movie/create" element={<MovieForm />} />
+              <Route path="/movie/edit/:movieID" element={<EditMovie />} />
             </Route>
 
             <Route path="/login" element={<Login />} />

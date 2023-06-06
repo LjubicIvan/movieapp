@@ -32,6 +32,12 @@ Link{
     background-color: transparent;
 }
 
+.edit_link{
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+
+}
 
 /*Navbar*/
 
@@ -47,6 +53,7 @@ Link{
 .navbar_links{
     display: flex;
     list-style: none;
+    background-color: transparent;
     
 }
 .navbar_logo{
@@ -57,6 +64,7 @@ Link{
 }
 .navbar_logo h1{
     color: red;
+    background-color: transparent;
 }
 
 
@@ -68,6 +76,7 @@ Link{
 .navbar_link{
     text-decoration: none;
     color: inherit;
+    background-color: transparent;
 }
 .navbar_link h3:hover{
     transform: scale(1.1);
@@ -339,6 +348,20 @@ box-shadow: 0px 0px 20px -6px rgba(255,255,255,1);
 .movie_id_description{
     margin-top: 40px;
     margin-bottom: 20px;
+}
+.movie_id_delete{
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: gray;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.movie_id_delete:hover{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
 }
 
 .movie_id_rating{
@@ -737,6 +760,7 @@ box-shadow: 0px 0px 13px -4px rgba(255,255,255,1);
     font-size: 18px;
     font-weight: 800;
     border: none;
+    cursor: pointer;
 }
 
 

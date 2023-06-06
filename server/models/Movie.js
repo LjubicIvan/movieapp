@@ -3,7 +3,7 @@ const mongoose=require("mongoose");
 const MovieSchema=new mongoose.Schema({
     
     movie:{type:String,required:true},
-    rating:{type:Number,required:true},
+    rating:{type:Number,required:true,min:1,max:10},
     year:{type:Number,required:true},
     imdb_url:{type:String,required:true},
     description:{type:String,required:true},
