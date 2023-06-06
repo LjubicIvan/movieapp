@@ -58,6 +58,8 @@ function MovieForm() {
               setRating(e.target.value);
             }}
             value={rating}
+            min="1"
+            max="10"
           />
           <input
             type="number"

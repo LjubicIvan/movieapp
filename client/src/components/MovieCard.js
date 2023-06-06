@@ -14,7 +14,7 @@ export default function MovieCard({ item,isFav }) {
         <img src={require("../images/movie.jpg")} alt="" />
       </div>
       <div className="movie_card_content">
-        <Link className="Link" to={`/movie/${item.id}`}>
+        <Link className="Link" to={`/movie/${item._id}`}>
           <h3 className="movie_card_title">{item.movie} </h3>
         </Link>
 

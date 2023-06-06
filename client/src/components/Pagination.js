@@ -44,14 +44,14 @@ const Pagination = () => {
   };
 
   const displayPagination = searchmovies
-    .slice(firstIndex, lastIndex)
-    .map((item) => {
-      const isFav = favorites.some((movieFav=>movieFav.id===item.id
-      ))
-      return(
-        <MovieCard isFav={isFav} item={item} key={item.id}/>
-      )
-    });
+  .slice(firstIndex, lastIndex)
+  .map((item) => {
+    const isFav = favorites.some((movieFav=>movieFav._id===item._id
+    ))
+    return(
+      <MovieCard isFav={isFav} item={item} key={item.id}/>
+    )
+  });
 
   return (
     <div>

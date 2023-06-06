@@ -43,15 +43,16 @@ export function MovieProvider({ children }) {
   }, []);
 
   const handleFavorites=(item)=>{
-    if (!favorites.some((favorites) => favorites.id === item.id)) {
+    if (!favorites.some((favorites) => favorites._id === item._id)) {
       setFavorites((favorites) => [...favorites, item]);
 
     }else{
       setFavorites((favorites) =>
-      favorites.filter((favorites) => favorites.id !== item.id)
+      favorites.filter((favorites) => favorites._id !== item._id)
     );
     }
   }
+  console.log(favorites)
 
 
   
@@ -70,7 +71,6 @@ export function MovieProvider({ children }) {
 
   
 
-console.log(movies)
 
 
 

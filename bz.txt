@@ -205,4 +205,57 @@ export default function Login() {
 
 
  {user.role==="role_admin" ?         <li> <Link to="/movie/create" className="navbar_link"><h3>Create New Movie</h3></Link></li> 
-: <h1>Nott</h1>      } 
+: <h1>Nott</h1>      } đ
+
+
+
+
+
+ <div>
+      {!loading && movie ? (
+        <div className="movie_id_all">
+        <div className="movie_id">
+          <div className="movie_id_thumbnail">
+            <img src={require("../images/movie.jpg")} alt="" />
+          </div>
+
+          <div className="movie_id_right">
+            <h1 className="movie_id_title">{movie.movie}</h1>
+            <h3 className="movie_id_rating">
+              Rating : {movie.rating} <span>&#9733;</span>{" "}
+            </h3>
+
+            <div className="movie_id_tags">{tags}</div>
+
+            <div className="movie_id_stars">{stars}</div>
+
+            <p className="movie_id_description">{movie.description}</p>
+
+            <div className="movie_id_buttons">
+              <AiOutlineHeart
+                className="movie_id_fav_heart"
+                onClick={() => {
+                  handleFavorites(movie);
+                }}
+              />
+              <button className="movie_id_imdb">
+                <a href={movie.imdb_url}>ImDB</a>
+              </button>
+
+              <button className="movie_id_delete">
+                Delete Movie
+              </button>
+            </div>
+          </div>
+          
+        </div>
+        <div className="movie_id_player">
+        <iframe className="video" width="1150" height="647" src="https://www.youtube.com/embed/xi-1NchUqMA" title="Knives Out Trailer #1 (2019) | Movieclips Trailers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <Footer/>
+        </div>
+      ) : (
+        <p>Loading Data</p>
+      )}
+    </div> 

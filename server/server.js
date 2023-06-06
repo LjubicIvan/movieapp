@@ -7,9 +7,6 @@ const cookieParser = require('cookie-parser');
 const jwt=require('jsonwebtoken');
 const secret="randomsdfajsdnfaasdfa12312sdas1231";
 
-//new
-
-
 
 
 const User=require("./models/User")
@@ -295,12 +292,6 @@ app.post('/logout',(req,res)=>{
 
 
 
-//Get all movies LOCAL
-app.get("/movies", (req, res) => {
-  res.json(data);
-});
-
-
 
 
 
@@ -308,12 +299,11 @@ app.get("/movies", (req, res) => {
 
 
 //Get ALL movies MongoDB
-app.get('/moviesss', async (req,res) => {
+app.get('/movies', async (req,res) => {
   res.json(
     await Movie.find()
   );
 });
-
 
 //MongoDb POST movie
 app.post("/movies",async (req,res)=>{
@@ -335,28 +325,51 @@ app.post("/movies",async (req,res)=>{
 
     }catch(e){      res.status(400).json(e);
     }
-    
   });
-
-
 })
 
 
 //GET MOVIE BY ID MONGODB
-app.get('/moviess/:id', async (req, res) => {
+app.get('/movie/:id', async (req, res) => {
   const {id} = req.params;
   const MovieDoc = await Movie.findById(id);
   res.json(MovieDoc);
 })
 
 //DELETE by id Mongodb 
-app.delete('/movie/delete/:id',async(req,res)=>{
+app.delete('/movie/:id',async(req,res)=>{
   const {id}=req.params;
   const MovieDoc = await Movie.findByIdAndDelete(id);
   res.json(MovieDoc)
 })
 
+//update by id
+app.put('/movie/edit/:id',async(req,res)=>{
+  const {id}=req.params;
+  const {token} = req.cookies;
 
+  jwt.verify(token, secret, {}, async (err,info) => {
+    try{
+      const { movie, rating, description, imdb_url,year,tag,stars } = req.body;
+
+      const movieDoc=await Movie.findById(id)
+      await movieDoc.updateOne({
+        movie,
+        rating,
+        description,
+        imdb_url,
+        year,
+        tag,
+        stars
+      })
+    res.json(movieDoc);
+
+    }catch(e){   
+       res.status(400).json(e);
+    }
+  });
+
+})
 
 
 
